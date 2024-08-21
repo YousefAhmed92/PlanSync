@@ -1,4 +1,5 @@
-# PlanSync3
+# PlanSync
+
 1) <mark> description </mark>
 2) validations
 3) auth & authntications
