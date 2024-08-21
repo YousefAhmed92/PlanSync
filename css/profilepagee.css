@@ -1,0 +1,310 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/Capture.PNG);
+    
+
+}
+
+:root {
+    --color-1: #ee721f;
+    --color-2: #6c5f5b;
+    --color-3: rgb(74, 74, 74);
+    --color-4: #f6f1eed9;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none !important;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.main_content {
+    width: 67%;
+    height: 100vh;
+    background-color: rgba(50, 50, 50, 0.848);
+    position: absolute;
+    left: 17%;
+}
+/* naaaavvvv */
+.items {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    color: #ddd !important;
+    font-size: 22px;
+}
+
+.nav-link:hover {
+    color: white !important;
+    opacity: 50%;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-size: 26px !important;
+}
+
+.btn {
+    color: white !important;
+    border: solid 1px white !important;
+}
+
+.btn:hover {
+    color: white !important;
+    border: solid 1px white !important;
+    opacity: 50%;
+}
+
+/* -------------------------------------------------naaaavvvvv---------------------------------------------------------- */
+
+
+/* -------------------------------------------------start upper nav=----------------------------------------------- */
+.main {
+    width: 83%;
+    min-height: 100vh;
+    /* background-color:  #F8F4E1; */
+    position: absolute;
+    left: 17%;
+}
+
+
+.close-nav {
+    width: 100%;
+    left: 0;
+}
+
+.nav-link {
+    color: aliceblue;
+}
+
+/* -------------------------------------------end uppser nav--------------------------------------------------------- */
+
+/* ------------------------------------------------nav responsive-------------------------------------------- */
+@media(max-width:800px) {
+    .side-nav {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+        position: absolute;
+        left: 0;
+    }
+
+    .main_content {
+        display: block;
+
+    }
+
+    footer {
+        position: relative;
+    }
+
+}
+
+
+.profile-container {
+    width: 50%;
+    margin: 50px auto;
+    background-color: none;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+
+.profile-info {
+    margin: 20px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-info label {
+    font-weight: bold;
+
+}
+
+.profile-info span {
+    color: whitesmoke;
+    margin-left: 10px;
+}
+
+.actions {
+    text-align: center;
+    margin-top: 20px;
+
+
+}
+
+.actions a {
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--color-1);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.actions a:hover {
+
+    text-decoration: none;
+}
+
+
+.actions p {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.card {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card ul li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+a {
+    /* color: #007bff; */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ee721f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: none;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+/* @media (max-width: 1024px) {
+    .actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .actions a {
+        margin-bottom: 10px;
+    }
+
+    .profile-info {
+        display: block;
+        margin-bottom: 10px;
+    }
+} */
+
+@media (max-width: 700px) {
+    .profile-container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .profile-info label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .profile-info span {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .actions {
+        flex-direction: column;
+        align-items: center;
+        width: 309px;
+    }
+
+    .actions a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}

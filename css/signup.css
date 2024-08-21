@@ -1,0 +1,507 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* :root {
+    --color-1: #ee721f;
+    --color-2: #6C5F5B;
+    --color-3: #4F4A45;
+    --color-4: #F6F1EE;
+} */
+:root {
+  --color-1: #ee721f;
+  --color-2: #6c5f5b;
+  --color-3: rgb(74, 74, 74);
+  --color-4: #f6f1eed9;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+body {
+  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  /* font-family: IM Fell English SC, serif */
+
+}
+
+/* naaaavvvv */
+.items {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 10%;
+  right: 0%;
+  color: #ddd !important;
+  font-size: 22px;
+}
+
+.nav-link:hover {
+  color: white !important;
+  opacity: 50%;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-size: 26px !important;
+}
+
+.btn {
+  color: white !important;
+  border: solid 1px white !important;
+}
+
+.btn:hover {
+  color: white !important;
+  border: solid 1px white !important;
+  opacity: 50%;
+}
+
+nav {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  /* Ensure it stays on top of other content */
+
+
+}
+
+/* -------------------------------------------------naaaavvvvv---------------------------------------------------------- */
+.formdiv {
+  width: 60%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: start;
+  justify-content: center;
+  gap: 8px;
+  /* padding: 20px; */
+  position: relative;
+  overflow: hidden;
+  padding-right: 100px;
+  padding-bottom: 60px;
+  right: 5%;
+
+}
+
+.mycontainer::before {
+  content: '';
+  position: absolute;
+  right: -59%;
+  top: -12%;
+  width: 120%;
+  height: 97%;
+  
+  transform: rotate(219deg);
+  overflow: hidden;
+  background: #F6F1EE;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #F6F1EE, #6C5F5B);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #F6F1EE, #6C5F5B);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.signup-div {
+  position: absolute;
+  right: 14%;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-family: "mouse-500", Arial, Helvetica, sans-serif;
+  right: 6%;
+  bottom: 43%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 40PX;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--color-1);
+
+}
+
+.par {
+  font-size: 17px;
+  font-family: "PT Serif", serif;
+  font-weight: 550;
+  color: var(--color-3);
+
+
+}
+
+.head {
+  margin-top: 10px;
+  color: var(--color-1);
+  font-weight: bold;
+  text-align: center;
+  font-size: 60PX;
+  font-family: "PT Serif", serif;
+  font-weight: 600;
+  width: 30vh;
+ 
+  
+
+}
+
+.create {
+  font-size: 15px;
+  margin-top: 10px;
+  color: var(--color-3);
+  font-family: "PT Serif", serif;
+  font-weight: 550;
+
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: start;
+
+}
+
+.mycontainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: var(--color-3); */
+  overflow: hidden;
+  /* margin-top: 30%; */
+  background: #F6F1EE;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #F6F1EE, #6C5F5B);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #F6F1EE, #6C5F5B);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.username {
+  border-radius: 5px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  width: 120%;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 15%;
+}
+
+.password {
+  border-radius: 5px;
+  margin-bottom: 15px;
+  width: 120%;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 15%
+
+}
+
+.confirm-password {
+  border-radius: 5px;
+  margin-bottom: 15px;
+  width: 120%;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 15%
+
+}
+
+.email {
+  border-radius: 5px;
+  margin-bottom: 15px;
+  width: 120%;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 15%
+
+}
+
+.forget {
+  margin: 0;
+  text-decoration: none;
+  font-size: 17px;
+  color: var(--color-3);
+  font-family: "PT Serif", serif;
+  font-weight: 550;
+  margin-bottom: 12px;
+
+
+}
+
+.btn-17,
+.btn-17 *,
+.btn-17 :after,
+.btn-17 :before,
+.btn-17:after,
+.btn-17:before {
+  border: 0 solid;
+  box-sizing: border-box;
+  transition: 0.5;
+}
+
+.btn-17 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #ee721f;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+      Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+      Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#ee721f, #fff);
+  padding: 0;
+  text-transform: uppercase;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.btn-17:disabled {
+  cursor: default;
+}
+
+.btn-17:-moz-focusring {
+  outline: auto;
+}
+
+.btn-17 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-17 [hidden] {
+  display: none;
+}
+
+.btn-17 {
+  border-radius: 99rem;
+  border-width: 2px;
+  padding: 0.8rem 3rem;
+  z-index: 0;
+  
+}
+
+.btn-17,
+.btn-17 .text-container {
+  overflow: hidden;
+  position: relative;
+  /* right:-65% ; */
+}
+
+.btn-17 .text-container {
+  display: block;
+  /* mix-blend-mode: difference; */
+  color: white;
+}
+
+.btn-17 .text {
+  display: block;
+  position: relative;
+  color: var(--color-4);
+}
+
+.btn-17:hover .text {
+  -webkit-animation: move-up-alternate 0.3s forwards;
+  animation: move-up-alternate 0.3s forwards;
+  color: var(--color-1);
+}
+
+@-webkit-keyframes move-up-alternate {
+  0% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(80%);
+  }
+
+  51% {
+      transform: translateY(-80%);
+  }
+
+  to {
+      transform: translateY(0);
+  }
+}
+
+@keyframes move-up-alternate {
+  0% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(80%);
+  }
+
+  51% {
+      transform: translateY(-80%);
+  }
+
+  to {
+      transform: translateY(0);
+  }
+}
+
+.btn-17:after,
+.btn-17:before {
+  --skew: 0.2;
+  background: #fff;
+  content: "";
+  display: block;
+  height: 102%;
+  left: calc(-50% - 50% * var(--skew));
+  pointer-events: none;
+  position: absolute;
+  top: -104%;
+  transform: skew(calc(150deg * var(--skew))) translateY(var(--progress, 0));
+  transition: transform 0.2s ease;
+  width: 100%;
+}
+
+.btn-17:after {
+  --progress: 0%;
+  left: calc(50% + 50% * var(--skew));
+  top: 102%;
+  z-index: -1;
+}
+
+.btn-17:hover:before {
+  --progress: 100%;
+}
+
+.btn-17:hover:after {
+  --progress: -102%;
+}
+
+.parentlog {
+  align-items: center;
+}
+
+.alert {
+  padding: 6px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+}
+
+.passworddiv, .usernamediv, .emaildiv{
+  width: 100%;
+  position: relative;
+}
+.passworddiv i {
+  position: absolute;
+  top: 24%;
+  left: 3%;
+}
+.passworddiv .fa-eye , .fa-eye-slash{
+  right: -137%;
+  cursor: pointer;
+}
+
+.usernamediv i{
+  position: absolute;
+  top: 34%;
+  left: 3%;
+}
+
+.emaildiv i{
+  position: absolute;
+  top: 28%;
+  left: 3%;
+}
+
+
+
+/* @media(max-width:700){
+  .formdiv{
+      width: 50%;
+  }
+  .mycontainer::before{
+      width: 50%;
+      display: block;
+      background-color: #6c5f5b;
+  }
+  .head{
+      font-size: 20px;
+  }
+  h3{
+      font-size: 15px;
+  }
+
+} */
+@media (max-width:700px) {
+  .mycontainer::before {
+      display: none;
+  }
+
+  .signup-div {
+      position: static;
+  }
+
+.buttons{
+  width: 50%;
+  /* height: 10px; */
+  padding-right: 18px;
+}
+.username , .email , .password, .confirm-password{
+  height: 37px;
+  padding: 5px;
+}
+
+  .mycontainer {
+      flex-direction: column;
+  }
+
+  .formdiv {
+      padding: 0;
+      right: 0;
+      align-items: center;
+      width: 100%;
+      min-height: 60vh;
+  }
+  .signup-div{
+      margin-bottom: 10%;
+      margin-left: 4%;
+  }
+  h2{
+      font-size: 33px;
+  }
+
+
+
+
+
+
+
+
+
+
+}

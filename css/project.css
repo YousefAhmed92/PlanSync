@@ -1,0 +1,164 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-1: #ee721f;
+    --color-2: #6c5f5b;
+    --color-3: rgb(74, 74, 74);
+    --color-4: #f6f1eed9;
+}
+
+/* naaaavvvv */
+.items {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    color: #ddd !important;
+    font-size: 22px;
+}
+
+.nav-link:hover {
+    color: white !important;
+    opacity: 50%;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-size: 26px !important;
+}
+
+.btn {
+    color: white !important;
+    border: solid 1px white !important;
+}
+
+.btn:hover {
+    color: white !important;
+    border: solid 1px white !important;
+    opacity: 50%;
+}
+nav{
+    margin: -20px;
+    margin-bottom: 20px !important;
+}
+
+/* -------------------------------------------------naaaavvvvv---------------------------------------------------------- */
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #333;
+    background-image: url(../img/Capture.PNG);
+}
+
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    background-color: #afafafa2;
+}
+
+th {
+    /* background-color: #979797a2; */
+    color: #333;
+}
+
+a {
+    text-decoration: none !important;
+    color: black;
+}
+
+tr:nth-child(even) {
+    /* background-color: #7e7e7ea2; */
+}
+
+.delete-button {
+    color: #e74c3c;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    text-decoration: underline;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    color: #333;
+}
+
+h1,
+h2 {
+    color: #2c3e50;
+}
+
+h1 {
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 10px;
+    color: #bb6125;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff7418;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    /* text-align: center; */
+
+}
+
+a:hover {
+    background-color: #333;
+}
+
+
+
+
+.error {
+    color: #e74c3c;
+    font-weight: bold;
+}

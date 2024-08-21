@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root {
+    --color-1: #ff7418;
+    --color-2: #6C5F5B;
+    --color-3: #68635e;
+    --color-4: #F6F1EE;
+    --color-5: #686D76;
+}
+
+/* naaaavvvv */
+.items {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    color: #ddd !important;
+    font-size: 22px;
+}
+
+.nav-link:hover {
+    color: white !important;
+    opacity: 50%;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-size: 26px !important;
+}
+
+.btn {
+    color: white !important;
+    border: solid 1px white !important;
+}
+
+.btn:hover {
+    color: white !important;
+    border: solid 1px white !important;
+    opacity: 50%;
+}
+
+/* -------------------------------------------------naaaavvvvv---------------------------------------------------------- */
+
+
+body{
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../Img/Capture.PNG);
+}
+.ayhaga{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+:where(.containerrr,form,.input-field,header){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: transparent;
+    padding: 30px 65px;
+    border-radius: 12px;
+    row-gap: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.container header{
+    height: 65px;
+    width: 65px;
+    background: var(--color-1);
+    color: #ffffff;
+    font-size: 3.5rem;
+    border-radius: 50%;
+}
+.container h4{
+    font-size: 1.25rem;
+    color: var(--color-4);
+    font-weight: 700;
+    font-family: "Philosopher", sans-serif;
+}
+
+form .input-field{
+    flex-direction: row;
+    column-gap: 10px;
+}
+.input-field input{
+    height: 45px;
+    width: 42px;
+    border-radius: 6px;
+    outline: none;
+    font-size: 1.125rem;
+    text-align: center;
+    border: 1px solid #858585;
+}
+.input-field input::-webkit-inner-spin-button,
+.input-field input::-webkit-outer-spin-button{
+    display: none;
+}
+form button{
+    margin-top: 25px;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    padding: 9px 0;
+    cursor: pointer;
+    border-radius: 6px;
+    pointer-events: none;
+    background: var(--color-1);
+    transition: all 0.2s ease;
+}
+form button.active{
+    background-color: #5C8374;
+    pointer-events: auto;
+}
+form button:hover{
+    background: var(--color-3);
+}
+.resendBtn{
+    pointer-events: all;
+}
+@media (max-width:800px) {
+
+
+    .xxcontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+    }
+
+
+}

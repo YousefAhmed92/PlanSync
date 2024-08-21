@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    background-image: url(../img/Capture.PNG);
+    
+
+}
+
+/* naaaavvvv */
+.items {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    color: #ddd !important;
+    font-size: 22px;
+}
+
+.nav-link:hover {
+    color: white !important;
+    opacity: 50%;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-size: 26px !important;
+}
+
+.btn {
+    color: white !important;
+    border: solid 1px white !important;
+}
+
+.btn:hover {
+    color: white !important;
+    border: solid 1px white !important;
+    opacity: 50%;
+}
+nav{
+    margin: -20px;
+    margin-bottom: 20px !important;
+}
+
+/* -------------------------------------------------naaaavvvvv---------------------------------------------------------- */
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-top: 10%;
+    
+}
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center the cards */
+    margin-top: 5%;
+}
+
+.subscription {
+    /* background-color: #fff; */
+    border: 2px solid  ;
+    border-radius: 8px;
+    padding: 15px;
+    width: calc(50% - 20px); /* Half width minus the gap */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    background: none;
+    /* border-color: rgb(74, 74, 74); */
+}
+
+.subscription:hover {
+    transform: scale(1.02);
+}
+
+.subscription h3 {
+    margin: 0;
+    color: black;
+}
+
+.subscription a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.subscription a:hover {
+    background-color: rgb(68, 66, 66);
+}
+
+a.back-link {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+}
+
+a.back-link:hover {
+    text-decoration: underline;
+    color:rgb(68, 66, 66) ;
+}
