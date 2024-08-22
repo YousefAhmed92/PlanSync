@@ -8,7 +8,7 @@ a unique task management system with many packages and plans that can fits all o
 <hr>
   
 
-3) <h1> PlanSync Extra features </h1>
+2) <h1> PlanSync Extra features </h1>
   1) An advanced php statements and methods which are more secured and protect the users from hacking or sql injection 
   2) Notifications After creating task, sprint to better user experience
   3) More secured transactions via user's mail (After purchasing)
