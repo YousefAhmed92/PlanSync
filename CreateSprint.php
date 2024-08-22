@@ -109,12 +109,6 @@ $connect->close();
         <li class="nav-item" style="margin-right: 40px;">
           <a class="nav-link" aria-current="page" href="profilepage.php">Profile</a>
         </li>
-        <li class="nav-item" style="margin-right: 40px;">
-          <a class="nav-link" aria-current="page" href="profilepage.php">Projects</a>
-        </li>
-        <li class="nav-item" style="margin-right: 40px;">
-          <a class="nav-link" aria-current="page" href="profilepage.php">Tasks</a>
-        </li>
         </div>
 
       </ul>
