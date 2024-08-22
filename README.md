@@ -16,6 +16,29 @@ a unique task management system with many packages and plans that can fits all o
   5) Validations and constraints related to your role_id (leader or member) in a specefic project
   6) + all the requirements for this project
 
+<br>
+<hr>
+
+
+3) compressed files in this folder
+  1) database-compressed => ERD , Use Case and the database "updated-case1"
+  2) img-compressed => all the images in this webstie
+  3) mail-compressed => everything related to the mail and OTP
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
