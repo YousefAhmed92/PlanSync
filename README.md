@@ -20,11 +20,12 @@ a unique task management system with many packages and plans that can fits all o
 <hr>
 
 
-3) compressed files in this folder
+3) <h1> compressed files in this folder </h1>
   1) database-compressed => ERD , Use Case and the database "updated-case1"
   2) img-compressed => all the images in this webstie
   3) mail-compressed => everything related to the mail and OTP
-     
+
+
 
 
 
