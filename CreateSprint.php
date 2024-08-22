@@ -81,14 +81,17 @@ $connect->close();
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             z-index: 1000;
             display: none; /* Initially hidden */
+            margin-top: 100px;
+            background-color: white;
+            color: red;
         }
         .notification.success {
-            background-color: #d4edda;
-            color: #155724;
+            background-color: white;
+            color: red;
         }
         .notification.error {
-            background-color: #f8d7da;
-            color: #721c24;
+            background-color: white;
+            color: red;
         }
     </style>
 </head>
