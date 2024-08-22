@@ -13,65 +13,16 @@
     --color-5: #686D76;
 }
 
-/* naaaavvvv */
-.items {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    top: 10%;
-    right: 0%;
-    color: #ddd !important;
-    font-size: 22px;
-}
-
-.nav-link:hover {
-    color: white !important;
-    opacity: 50%;
-}
-
-.nav-link {
-    color: white !important;
-}
-
-.navbar-brand {
-    color: white !important;
-    font-size: 26px !important;
-}
-
-.btn {
-    color: white !important;
-    border: solid 1px white !important;
-}
-
-.btn:hover {
-    color: white !important;
-    border: solid 1px white !important;
-    opacity: 50%;
-}
-
-/* -------------------------------------------------naaaavvvvv---------------------------------------------------------- */
-
-
-body{
+body {
     min-height: 100vh;
+    display: flex;
     align-items: center;
     justify-content: center;
     background-image: url(../Img/Capture.PNG);
-}
-.ayhaga{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
-}
-:where(.containerrr,form,.input-field,header){
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-size: cover;
 }
 
-.container{
+.container {
     background-color: transparent;
     padding: 30px 65px;
     border-radius: 12px;
@@ -84,7 +35,8 @@ body{
     text-align: center;
     align-items: center;
 }
-.container header{
+
+.container header {
     height: 65px;
     width: 65px;
     background: var(--color-1);
@@ -92,18 +44,21 @@ body{
     font-size: 3.5rem;
     border-radius: 50%;
 }
-.container h4{
+
+.container h4 {
     font-size: 1.25rem;
     color: var(--color-4);
     font-weight: 700;
     font-family: "Philosopher", sans-serif;
 }
 
-form .input-field{
+form .input-field {
+    display: flex;
     flex-direction: row;
     column-gap: 10px;
 }
-.input-field input{
+
+.input-field input {
     height: 45px;
     width: 42px;
     border-radius: 6px;
@@ -112,11 +67,13 @@ form .input-field{
     text-align: center;
     border: 1px solid #858585;
 }
+
 .input-field input::-webkit-inner-spin-button,
-.input-field input::-webkit-outer-spin-button{
+.input-field input::-webkit-outer-spin-button {
     display: none;
 }
-form button{
+
+form button {
     margin-top: 25px;
     width: 100%;
     color: #fff;
@@ -129,26 +86,23 @@ form button{
     background: var(--color-1);
     transition: all 0.2s ease;
 }
-form button.active{
+
+form button.active {
     background-color: #5C8374;
     pointer-events: auto;
 }
-form button:hover{
+
+form button:hover {
     background: var(--color-3);
 }
-.resendBtn{
+
+.resendBtn {
     pointer-events: all;
 }
-@media (max-width:800px) {
 
-
-    .xxcontainer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+@media (max-width: 800px) {
+    .container {
         width: 90%;
+        padding: 20px;
     }
-
-
 }
