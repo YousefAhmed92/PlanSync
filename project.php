@@ -241,7 +241,6 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
             <thead>
                 <tr>
                     <th>Username</th>
-                    <th>Email</th>
                     <th>Actions</th>
                 </tr>
             </thead>
@@ -253,7 +252,6 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
                                 <?= htmlspecialchars($row['username']) ?>
                             </a>
                         </td>
-                        <td><?= htmlspecialchars($row['member_email']) ?></td>
                         <td>
                             <?php if ($user_id == $project['user_id']) { ?>
                                 <button onclick="deleteMember(<?= htmlspecialchars($project_id) ?>, <?= htmlspecialchars($row['user_id']) ?>, this)" class="delete-button">Delete</button>
