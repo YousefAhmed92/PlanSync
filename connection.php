@@ -3,6 +3,7 @@ $localhost="localhost";
 $username="root";
 $password="";
 $database="updated-case1";
+error_reporting(0) ;
 
 session_start();
 ob_start();
