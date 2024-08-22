@@ -75,7 +75,7 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <div class="items">
         <li class="nav-item" style="margin-right: 40px;">
-          <a class="nav-link" aria-current="page" href="#">Home</a>
+          <a class="nav-link" aria-current="page" href="landing.php">landing</a>
         </li>
         <!-- <li class="nav-item" style="margin-right: 40px;">
           <a class="nav-link" aria-current="page" href="#">Profile</a>
