@@ -57,8 +57,9 @@ $capacity3=$fetchdata['capacity'];
 
 <body>
 
-    <!-- start nav bar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: rgba(50, 50, 50, 0.848) !important;">
+<?php if ($name): ?>
+<!-- start nav bar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: rgba(50, 50, 50, 0.848) !important;">
   <div class="container-fluid">
     <a class="navbar-brand" href="landing.php">PlanSync</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,26 +68,45 @@ $capacity3=$fetchdata['capacity'];
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <div class="items">
-        <li class="nav-item" style="margin-right: 40px;">
-          <a class="nav-link" aria-current="page" href="landing.php">Home</a>
-        </li>
-        <li class="nav-item" style="margin-right: 40px;">
-          <a class="nav-link" aria-current="page" href="profilepage.php">Profile</a>
-        </li>
-        <li class="nav-item" style="margin-right: 40px;">
-          <a class="nav-link" aria-current="page" href="my_subscriptions.php">my subscriptions</a>
-        </li>
-       
+          <li class="nav-item" style="margin-right: 40px;">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <span class="nav-link">Welcome, <?php echo htmlspecialchars($name); ?>!</span>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item" style="margin-right: 40px;">
+            <a class="nav-link" aria-current="page" href="landing.php">Home</a>
+          </li>
+          <li class="nav-item" style="margin-right: 40px;">
+            <a class="nav-link" aria-current="page" href="profilepage.php">Profile</a>
+          </li>
+          <li class="nav-item" style="margin-right: 40px;">
+            <a class="nav-link" aria-current="page" href="my_subscriptions.php">My Subscriptions</a>
+          </li>
         </div>
-
       </ul>
-      <!-- <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn" type="submit">Search</button>
-      </form> -->
     </div>
   </div>
 </nav>
+<!-- end nav bar -->
+<?php else: ?>
+<!-- Sign Up Button for not logged in users -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: rgba(50, 50, 50, 0.848) !important;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="landing.php">PlanSync</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item" style="margin-right: 40px;">
+          <button style="background-color: #ff7418;">
+            <a class="nav-link" href="signup.php" style="color: white;">Sign Up</a>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<?php endif; ?>
   <!-- end nav bar -->
 
   <div class="home">
