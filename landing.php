@@ -1,8 +1,7 @@
 <?php
 include "connection.php";
-// $id=$_SESSION['user_id'];
-// $_SESSION['user_id']=$id;
-$user_id = 20;
+$id=$_SESSION['user_id'];
+$_SESSION['user_id']=$id;
 $select1="SELECT * FROM `subscription` WHERE `subscription_id`=1" ;
 $runselect1=mysqli_query($connect,$select1);
 
@@ -22,6 +21,8 @@ $subscription_id3=$fetchdata['subscription_id'];
 $name3=$fetchdata['subscription_name'];
 $price3=$fetchdata['price'];
 $capacity3=$fetchdata['capacity'];
+
+
 
 ?>
 
@@ -111,9 +112,6 @@ $capacity3=$fetchdata['capacity'];
 
             <div class="content-img">
                 <img src="./Img/WhatsApp Image 2024-08-01 at 12.18.25 PM.jpeg">
-
-
-
             </div>
         </div>
         <div class="wave">
@@ -168,80 +166,82 @@ $capacity3=$fetchdata['capacity'];
                 </div>
             </div>
             <div class="grid">
-                <div class="box">
-                    <?php foreach($runselect1 as $da1){ ?>
-                    <div class="title"> <?php echo $da1['subscription_name'] ;?></div>
 
-                    <div class="price">
-                        <b>$ <?php echo $da1['price'];?></b>
-                        <span>Per month</span>
-                    </div>
-                    <div class="features">
+<div class="box">
+    <?php foreach($runselect1 as $da1){ ?>
+        <div class="title"> <?php echo htmlspecialchars($da1['subscription_name']); ?></div>
 
-                        <div> <?php echo $da1['capacity'] ?> members</div>
-                        <!-- <hr>
-                        <div> 50 Gb storage</div>
-                        <hr>
-                        <div> 2 users allowed</div> -->
-                        <!-- <hr> -->
-                         <!-- bro what does that even mean ? -->
-                        <!-- <div> send up</div> -->
-                    </div>
-                    <div class="button">
-                    <button><a  class="a" href="bayment.php?subid=<?php echo $da1['subscription_id']?>">buy package</a></button>
-                    </div>
-                    <?php } ?>
-                </div>
+        <div class="price">
+            <b>$ <?php echo htmlspecialchars($da1['price']); ?></b>
+            <span>Per month</span>
+        </div>
+        <div class="features">
+            <div> <?php echo htmlspecialchars($da1['capacity']); ?> members</div>
+        </div>
+        <div class="button">
+            <?php if (isset($_SESSION['user_id'])): ?>
+                <!-- User is logged in -->
+                <button>
+                    <a class="a" href="bayment.php?subid=<?php echo htmlspecialchars($da1['subscription_id']); ?>">Buy Package</a>
+                </button>
+            <?php else: ?>
+                <!-- User is not logged in -->
+                <p>You must <a href="signup.php"> sign up </a>first to but.</p>
+                <?php endif; ?>
+        </div>
+    <?php } ?>
+</div>
             
-           
-                <!-- try -->
-                
+      
+
                 <div class="box Professional">
-                    <div class="title"><?php echo $name2 ;?></div>
-                    <div class="price">
-                        <b>$ <?php echo $price2 ;?></b>
-                        <span>Per month</span>
-                    </div>
-                    <div class="features">
+    <div class="title"> <?php echo htmlspecialchars($name2); ?></div>
 
-                        <div> <?php echo $capacity2 ;?> members</div>
-                        <!-- <hr>
-                        <div> 200 Gb storage</div>
-                        <hr> 
-                        <div> 2 users allowed</div>
-                        <hr>
-                        <div> send up</div> -->
-                    </div> 
+    <div class="price">
+        <b>$ <?php echo htmlspecialchars($price2); ?></b>
+        <span>Per month</span>
+    </div>
+    <div class="features">
+        <div> <?php echo htmlspecialchars($capacity2); ?> members</div>
+    </div>
+    <div class="button">
+        <?php if (isset($_SESSION['user_id'])): ?>
+            <!-- User is logged in -->
+            <button>
+                <a class="a" href="bayment.php?subid=<?php echo htmlspecialchars($subscription_id2); ?>">Buy Package</a>
+            </button>
+        <?php else: ?>
+            <!-- User is not logged in -->
+            <p>You must <a href="signup.php"> sign up </a>first to but.</p>
+        <?php endif; ?>
+    </div>
+</div>
 
-                    <div class="button-1">
-                       <button> <a class="al"  href="bayment.php?subid=<?php echo $subscription_id2?>">buy package</a></button>
-                    </div> 
 
-                </div>
-               
 
-                <div class="box">
-                    <div class="title"> <?php echo $name3 ;?></div>
+<div class="box">
+    <div class="title"> <?php echo htmlspecialchars($name3); ?></div>
 
-                    <div class="price">
-                        <b>$ <?php echo $price3 ;?></b>
-                        <span>Per month</span>
-                    </div>
-                    <div class="features">
+    <div class="price">
+        <b>$ <?php echo htmlspecialchars($price3); ?></b>
+        <span>Per month</span>
+    </div>
+    <div class="features">
+        <div> <?php echo htmlspecialchars($capacity3); ?> members</div>
+    </div>
+    <div class="button">
+        <?php if (isset($_SESSION['user_id'])): ?>
+            <!-- User is logged in -->
+            <button>
+                <a class="a" href="bayment.php?subid=<?php echo htmlspecialchars($subscription_id3); ?>">Buy Package</a>
+            </button>
+        <?php else: ?>
+            <!-- User is not logged in -->
+            <p>You must <a href="signup.php"> sign up </a>first.</p>
+        <?php endif; ?>
+    </div>
+</div>
 
-                        <div> <?php echo $capacity3 ;?> members</div>
-                        <!-- <hr>
-                        <div> 1 TB storage</div>
-                        <hr> 
-                        <div> 2 users allowed</div>
-                        <hr>
-                        <div> send up</div> -->
-                    </div>
-                    <div class="button">
-                        <button> <a class="a" href="bayment.php?subid=<?php echo $subscription_id3?>">buy package</a></button>
-                    </div>
-                    
-                </div>
             </div>
             
         </div>
@@ -347,28 +347,13 @@ $capacity3=$fetchdata['capacity'];
                         </ul>
                     </div>
 
-
-
-
-
-
-
                 </div>
             </section>
         </div>
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 </body>
-
-
-
-
-
 
 </html>
